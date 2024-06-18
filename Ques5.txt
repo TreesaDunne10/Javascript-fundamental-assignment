@@ -1,0 +1,29 @@
+Ques 5: Explain the importance of comments in JavaScript and provide examples of single-line and
+multi-line comments?
+
+Ans 5. Comments play a crucial role in JavaScript and programming in general for several reasons:
+1. Documentation: Comments serve as documentation within the code, explaining its purpose, functionality, and usage. They help other developers(and yourself in the future) understand the codebase more easily, especially when revisiting it after some time.
+
+2. Clarification : Comments clarify complex or non-obvious sections of code, providing context and explanations for why certain approaches were chosen or specific decisions were made.
+
+3. Debugging : Comments can be used for debugging purposes by temporarily disabling or commenting out sections of code. This allows developers to isolate problematic code and test alternative solutions without permanently removing it.
+
+4. Communication : Comments facilitates Communication among team members working on the same codebase. They can convey ideas, suggestions, or reminders to other developers, fostering collaboration and teamwork.
+
+5. Maintainability : Well-commented code is easier to maintain and update because it provides insights into the code's structure and logic. Comments help identify areas that need modification or improvement, making the codebase more adaptable to changes over time.
+
+6. Compliance : Comments can also serve as placeholders for future enhancements or features that have not yet been implemented. They ensure that developers are aware of planned changes and encourage adherence to coding standards and best practices.
+
+Example : Single-line Comment
+//This is a single-line comment
+let age = 30; //Variable storing the age 
+
+Example : Multi-line Comment
+/* 
+   This is a multi-line comment
+   It can span multiple lines  
+   Used for longer explanations or documentation
+*/
+let name = "John";
+
+Both single-line comments(denoted by '//') and multi-line comments(enclosed between '/* and */') are ignored by the JavaScript iterpreter and are used solely for documentation and explanatory purposes.

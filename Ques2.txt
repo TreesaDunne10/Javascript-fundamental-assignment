@@ -1,0 +1,57 @@
+Ques 2: Explain the key differences between JavaScript and HTML. Provide examples of situations where
+you would use each?
+
+Ans 2 : The key difference between JavaScript and HTML lies in their respective roles and functions in web development:
+
+1. HTML(Hypertext Markup Language) : HTML is a markup language used to structure the content of a web page. It defines the layout and presentation of elements such as text, images, links, forms, and multimedia. HTML provides the basic building blocks for creating static web pages and defines their structure through tags and attributes.
+
+2. JavaScript : JavaScript is a programming language used to add interactivity, dynamic behavior, and functionality to web pages. Unlike HTML, which primarily focuses on the structure and presentation of content, JavaScript allows developers to manipulate the content, respond to user actions, modify the DOM (Document Object Model), handle events, validate forms, and communicate with servers asynchronously.
+        In essence, HTML provides the structure and content of a web page, while JavaScript adds functionality and interactivity to enhances the user experience. They often work together, with HTML defining the elements of a page and JavaScript controlling how those elements behave and interact with users.
+
+Examples: HTML
+1. Structuring Content : When you need to create the layout and structure of a web page, you would use HTML.
+<h1>Welcome to My Website</h1>
+<p>This is a paragraph of text.</p>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+2. Adding Multimedia : HTML is used to embed images, videos, and audio files into a web page.
+<img src="image.jpg" alt="Description of the image">
+<video src="video.mp4" controls></video>
+<audio src="audio.mp3" controls></audio>
+
+3. Creating Forms : HTML is used to create forms for collecting user input.
+<form action="/submit" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button type="submit">Submit</button>
+</form>
+
+Example : JavaScript
+1. Handling User Interaction : JavaScript is used to respond to user actions such as clicks, mouse movements, and keyboard input.
+document.getElementById('button').addEventListener('click',function(){
+    alert('Button clicked!');
+});
+
+2. Dynamic Content Updates: JavaScript can dynamically update content on a web page without reloading the entire page. 
+document.getElementById('output').innerText='New content';
+
+3. Form Validation : JavaScript can validate user input in forms before submitting the data to the server.
+function validateForm(){
+    var username = document.getElementById('username').value;
+    if(username === ''){
+        alert('Please enter a username.');
+        return false;
+    }
+}
+
+4. Asynchronous Communication : JavaScript is used to make asynchronous requests to servers, fetch data, and update the web page without refreshing.
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('data').innerText = data.message;
+    });
